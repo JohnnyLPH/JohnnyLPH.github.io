@@ -1,6 +1,6 @@
 :root {
     --theme-color: rgb(254, 253, 255);
-    --nav-color: rgb(66, 36, 97);
+    --nav-color: rgba(66, 36, 97, 0.97);
     --footer-color: rgb(41, 8, 67);
 }
 
@@ -15,4 +15,8 @@ nav {
 footer {
     background-color: var(--footer-color);
     color: var(--theme-color);
+}
+
+#skill .card:hover, #project .card:hover {
+    opacity: 0.85;
 }

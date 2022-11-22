@@ -18,7 +18,8 @@
         <link rel="shortcut icon" href="./favicon.ico">
     </head>
 
-    <body class="d-flex flex-column min-vh-100">
+    <body class="d-flex flex-column min-vh-100" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+        <!-- Sticky Navbar -->
         <nav class="navbar navbar-expand-sm navbar-dark sticky-top py-1 px-1">
           <div class="container-fluid">
             <a class="navbar-brand py-0" href="#home">
@@ -31,7 +32,7 @@
             <div id="collapsibleBar" class="collapse navbar-collapse">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#education">Education</a>
@@ -53,8 +54,10 @@
           </div>
         </nav>
 
+        <!-- Main Content -->
         <main class="container-lg pb-5 d-flex flex-column justify-content-center">
-            <div id="home" class="row pt-5 d-flex justify-content-center">
+            <!-- About Me -->
+            <div id="about" class="row pt-5 d-flex justify-content-center">
                 <!-- Summary -->
                 <div class="col-lg-6 col-md-7 col-sm-10 col-12 order-md-1 order-2 py-2 px-4">
                     <h2>Bonjour! こんにちは!</h2>
@@ -69,6 +72,7 @@
                 </div>
             </div>
 
+            <!-- Education -->
             <div id="education" class="row pt-5 d-flex justify-content-center">
                 <div class="col-lg-9 col-md-11 col-sm-10 col-12 py-2 px-4">
                     <h2>Education:</h2>
@@ -79,15 +83,15 @@
                     <div class="row p-0 m-0">
                         <div class="card">
                             <div class="card-body">
+                                <!-- General Info -->
                                 <div class="row p-0 m-0 d-flex justify-content-between">
                                     <a class="h6 col-8 p-0 text-decoration-none" href="https://www.unimas.my/" target="_blank">Universiti Malaysia Sarawak (UNIMAS)</a>
                                     <p class="h6 col-4 p-0 text-end">2020 - 2024</p>
                                 </div>
-                                
                                 <p class="h5">Bachelor of Computer Science with Honours (Software Engineering)</p>
 
                                 <!-- Description -->
-                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#educationDesc1">View Description</button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#educationDesc1">View Description <i class="fa-sharp fa-solid fa-caret-down"></i></button>
                                 
                                 <div id="educationDesc1" class="collapse mt-2">
                                     <div class="p-1">
@@ -111,15 +115,15 @@
                     <div class="row p-0 m-0">
                         <div class="card">
                             <div class="card-body">
+                                <!-- General Info -->
                                 <div class="row p-0 m-0 d-flex justify-content-between">
                                     <a class="h6 col-8 p-0 text-decoration-none" href="https://en.wikipedia.org/wiki/Batu_Lintang_National_Secondary_School" target="_blank">SMK Batu Lintang, Kuching</a>
                                     <p class="h6 col-4 p-0 text-end">2018 - 2019</p>
                                 </div>
-                                
                                 <p class="h5">Sijil Tinggi Persekolahan Malaysia (STPM)</p>
 
                                 <!-- Description -->
-                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#educationDesc2">View Description</button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#educationDesc2">View Description <i class="fa-sharp fa-solid fa-caret-down"></i></button>
                                 
                                 <div id="educationDesc2" class="collapse mt-2">
                                     <div class="p-1">
@@ -139,20 +143,160 @@
                 </div>
             </div>
 
+            <!-- Skills -->
             <div id="skill" class="row pt-5 d-flex justify-content-center">
                 <div class="col-lg-9 col-md-11 col-sm-10 col-12 py-2 px-4">
                     <h2>Skills & Knowledge:</h2>
-                    
+                </div>
+
+                <!-- List of Skills -->
+                <div class="col-lg-9 col-md-11 col-sm-10 col-12 py-2 px-2">
+                    <div class="row p-0 m-0 d-flex justify-content-center px-1">
+                        <!-- PHP -->
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-4 p-1">
+                            <a class="text-decoration-none text-body" href="https://en.wikipedia.org/wiki/PHP" target="_blank" title="PHP (Hypertext Preprocessor)" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="I learned PHP at UNIMAS and taught myself Laravel framework for some of my web development projects." data-bs-placement="bottom">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <i class="fa-brands fa-php fs-1 pb-2"></i>
+                                        <p class="h6 m-0">PHP</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- SQL -->
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-4 p-1">
+                            <a class="text-decoration-none text-body" href="https://en.wikipedia.org/wiki/SQL" target="_blank" title="SQL (Structured Query Language)" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Exposure to Database Design and Concept course at UNIMAS helped me gain a deeper understanding of SQL and Database." data-bs-placement="bottom">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <i class="fa-solid fa-database fs-1 pb-2"></i>
+                                        <p class="h6 m-0">SQL</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- MySQL -->
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-4 p-1">
+                            <a class="text-decoration-none text-body" href="https://en.wikipedia.org/wiki/MySQL" target="_blank" title="MySQL" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="MySQL is used as the primary database management system (DBMS) in most of my web development projects." data-bs-placement="bottom">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <i class="fa-solid fa-database fs-1 pb-2"></i>
+                                        <p class="h6 m-0">MySQL</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- JavaScript -->
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-4 p-1">
+                            <a class="text-decoration-none text-body" href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" title="JavaScript" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="JavaScript is primarily used for manipulating the Document Object Model (DOM) in web development." data-bs-placement="bottom">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <i class="fa-brands fa-square-js fs-1 pb-2"></i>
+                                        <p class="h6 m-0">JavaScript</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- HTML -->
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-4 p-1">
+                            <a class="text-decoration-none text-body" href="https://en.wikipedia.org/wiki/HTML" target="_blank" title="HTML5 (HyperText Markup Language)" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="HTML is used to define the basic structure of web pages." data-bs-placement="bottom">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <i class="fa-brands fa-html5 fs-1 pb-2"></i>
+                                        <p class="h6 m-0">HTML5</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- CSS -->
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-4 p-1">
+                            <a class="text-decoration-none text-body" href="https://en.wikipedia.org/wiki/CSS" target="_blank" title="CSS (Cascading Style Sheets)" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="CSS is used to style web pages. I often use the Bootstrap framework to create responsive websites such as my personal portfolio." data-bs-placement="bottom">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <i class="fa-brands fa-css3-alt fs-1 pb-2"></i>
+                                        <p class="h6 m-0">CSS</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Python -->
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-4 p-1">
+                            <a class="text-decoration-none text-body" href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank" title="Python" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="I have taught myself Python (Tkinter for simple GUI applications, brief experience with Flask for web development) before UNIMAS admission." data-bs-placement="bottom">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <i class="fa-brands fa-python fs-1 pb-2"></i>
+                                        <p class="h6 m-0">Python</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Java -->
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-4 p-1">
+                            <a class="text-decoration-none text-body" href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank" title="Java" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Learned basic Java (for Android development) before going to UNIMAS. Java was also taught at UNIMAS, and I learned to create simple GUI desktop applications using the Swing library." data-bs-placement="bottom">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <i class="fa-brands fa-java fs-1 pb-2"></i>
+                                        <p class="h6 m-0">Java</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- C -->
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-4 p-1">
+                            <a class="text-decoration-none text-body" href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank" title="C Programming Language" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="C is an introductory Computer Science course taught at UNIMAS, primarily for developing command-line interface applications." data-bs-placement="bottom">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <i class="fa-solid fa-laptop-code fs-1 pb-2"></i>
+                                        <p class="h6 m-0">C</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- C++ -->
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-4 p-1">
+                            <a class="text-decoration-none text-body" href="https://en.wikipedia.org/wiki/C%2B%2B" target="_blank" title="C++ Programming Language" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="UNIMAS introduces object-oriented software development using C++. Like C, C++ is used in various courses to build command-line interface applications." data-bs-placement="bottom">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <i class="fa-solid fa-laptop-code fs-1 pb-2"></i>
+                                        <p class="h6 m-0">C++</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- UX -->
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-4 p-1">
+                            <a class="text-decoration-none text-body" href="https://en.wikipedia.org/wiki/User_experience" target="_blank" title="UX (User Experience)" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="The Human Computer Interaction course at UNIMAS taught me how to achieve great UX in software." data-bs-placement="bottom">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <i class="fa-solid fa-users fs-1 pb-2"></i>
+                                        <p class="h6 m-0">UX</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Agile -->
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-4 p-1">
+                            <a class="text-decoration-none text-body" href="https://en.wikipedia.org/wiki/Agile_software_development" target="_blank" title="Agile Software Development" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Most, if not all, of my software development projects use agile practices to deliver a high standard application in a short period of time. Agile Software Development was introduced very early at UNIMAS, with Rapid Application Development (RAD) being the most used agile methodology across all semesters." data-bs-placement="bottom">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <i class="fa-solid fa-arrows-spin fs-1 pb-2"></i>
+                                        <p class="h6 m-0">Agile</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
+            <!-- Projects -->
             <div id="project" class="row pt-5 d-flex justify-content-center">
                 <div class="col-lg-9 col-md-11 col-sm-10 col-12 py-2 px-4">
-                    <h2>Projects:</h2>
+                    <h2>Featured Projects:</h2>
                     
                 </div>
             </div>
 
+            <!-- Work Experience -->
             <div id="experience" class="row pt-5 d-flex justify-content-center">
                 <div class="col-lg-9 col-md-11 col-sm-10 col-12 py-2 px-4">
                     <h2>Work Experience:</h2>
@@ -160,6 +304,7 @@
                 </div>
             </div>
 
+            <!-- Contact -->
             <div id="contact" class="row pt-5 d-flex justify-content-center">
                 <div class="col-lg-9 col-md-11 col-sm-10 col-12 py-2 px-4">
                     <h2>Contact:</h2>
@@ -168,6 +313,7 @@
             </div>
         </main>
 
+        <!-- Footer -->
         <footer class="mt-auto text-center py-3">
             <div class="h5 mb-2">&#169; <strong>Pikk Heang Lau</strong>. All rights reserved.</div>
             <div class="h6 my-0">Developed by <a class="text-decoration-none" target="_blank" href="https://github.com/JohnnyLPH">Pikk Heang Lau (JohnnyLPH)</a></div>

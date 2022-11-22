@@ -1,0 +1,18 @@
+:root {
+    --theme-color: rgb(230, 248, 245);
+    --nav-color: rgb(36, 80, 97);
+    --footer-color: rgb(8, 52, 67);
+}
+
+body {
+    background-color: var(--theme-color) !important;
+}
+
+nav {
+    background-color: var(--nav-color);
+}
+
+footer {
+    background-color: var(--footer-color);
+    color: var(--theme-color);
+}

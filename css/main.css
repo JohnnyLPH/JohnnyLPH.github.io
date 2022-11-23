@@ -20,3 +20,7 @@ footer {
 #skill .card:hover, #project .card:hover {
     opacity: 0.85;
 }
+
+.multiline {
+    white-space: pre-wrap;
+}

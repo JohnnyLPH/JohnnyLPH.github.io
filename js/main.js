@@ -55,6 +55,7 @@ function addAbout(json) {
 
     // Add Section 2 to main section.
     tempSection.appendChild(section2);
+    console.log(`Added About Me Content!`);
     return;
 }
 
@@ -155,6 +156,7 @@ function addEducation(json) {
         section2.appendChild(tempCard);
         tempSection.appendChild(section2);
     });
+    console.log(`Added Education Content!`);
     return;
 }
 
@@ -166,9 +168,97 @@ fetch("./js/info/education.json")
 // ----------------------------------------------------------------------------------------------------
 // For Bootstrap Popovers.
 // ----------------------------------------------------------------------------------------------------
-var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-    return new bootstrap.Popover(popoverTriggerEl)
-})
+var popoverList = [];
 
-console.log(`Final Message: If there is no error above, all contents are inserted successfully!`);
+// ----------------------------------------------------------------------------------------------------
+// Skills
+// ----------------------------------------------------------------------------------------------------
+// Add Skills Content.
+function addSkill(json) {
+    // Get Section by ID.
+    let tempSection = document.getElementById("skill");
+
+    // 2 subsections.
+    let tempElement, section1, section2;
+
+    // ----------------------------------------------------------------------------------------------------
+    // Section 1: Title.
+    section1 = document.createElement("div");
+    section1.className = "col-lg-9 col-md-11 col-sm-10 col-12 py-2 px-4";
+    
+    tempElement = document.createElement("h2");
+    tempElement.textContent = "Skills & Knowledge:";
+    section1.appendChild(tempElement);
+
+    // Add Section 1 to main section.
+    tempSection.appendChild(section1);
+
+    // ----------------------------------------------------------------------------------------------------
+    // Section 2: List of Skills.
+    section2 = document.createElement("div");
+    section2.className = "col-lg-9 col-md-11 col-sm-10 col-12 py-2 px-2";
+    
+    // Extra Elements.
+    let tempDiv1, nest1, nest2, nest3, nest4;
+
+    // Row.
+    tempDiv1 = document.createElement("div");
+    tempDiv1.className = "row p-0 m-0 d-flex justify-content-center px-1";
+    section1.appendChild(tempDiv1);
+
+    // Repeat Card Creation.
+    json.skill.forEach((item) => {
+        // Col.
+        nest1 = document.createElement("div");
+        nest1.className = "col-lg-2 col-md-3 col-sm-4 col-4 p-1";
+        tempDiv1.appendChild(nest1);
+
+        // External Link with Popover.
+        nest2 = document.createElement("a");
+        nest2.className = "text-decoration-none text-body";
+        nest2.setAttribute("href", item.externalLink);
+        nest2.setAttribute("target", "_blank");
+        nest2.setAttribute("title", item.title);
+        nest2.setAttribute("data-bs-toggle", "popover");
+        nest2.setAttribute("data-bs-trigger", "hover");
+        nest2.setAttribute("data-bs-content", item.description);
+        nest2.setAttribute("data-bs-placement", "bottom");
+        nest1.appendChild(nest2);
+
+        // ----------------------------------------------------------------------------------------------------
+        // For Bootstrap Popovers.
+        // ----------------------------------------------------------------------------------------------------
+        popoverList.push(new bootstrap.Popover(nest2));
+
+        // Card.
+        nest3 = document.createElement("div");
+        nest3.className = "card shadow-sm text-center";
+        nest2.appendChild(nest3);
+
+        // Card Body.
+        nest4 = document.createElement("div");
+        nest4.className = "card-body";
+        nest3.appendChild(nest4);
+
+        // Icon and Short Title.
+        tempElement = document.createElement("i");
+        tempElement.className = `${item.icon} fs-1 pb-2`;
+        nest4.appendChild(tempElement);
+        tempElement = document.createElement("p");
+        tempElement.className = "h6 m-0";
+        tempElement.textContent = item.shortTitle;
+        nest4.appendChild(tempElement);
+    });
+
+    console.log("Popover List after Adding Skills Content:\n");
+    console.log(popoverList);
+    console.log(`Added Skills Content!`);
+    return;
+}
+
+// Fetch Skills Content.
+fetch("./js/info/skill.json")
+    .then(response => response.json())
+    .then(addSkill);
+
+console.log(`Final Message: If there is no error, then everything runs fine!`);

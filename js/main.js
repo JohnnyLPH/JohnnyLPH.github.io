@@ -197,6 +197,7 @@ function addSkill(json) {
     // Section 2: List of Skills.
     section2 = document.createElement("div");
     section2.className = "col-lg-9 col-md-11 col-sm-10 col-12 py-2 px-2";
+    tempSection.appendChild(section2);
     
     // Extra Elements.
     let tempDiv1, nest1, nest2, nest3, nest4;
@@ -204,7 +205,7 @@ function addSkill(json) {
     // Row.
     tempDiv1 = document.createElement("div");
     tempDiv1.className = "row p-0 m-0 d-flex justify-content-center px-1";
-    section1.appendChild(tempDiv1);
+    section2.appendChild(tempDiv1);
 
     // Repeat Card Creation.
     json.skill.forEach((item) => {

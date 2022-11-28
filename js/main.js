@@ -490,4 +490,66 @@ fetch("./js/info/experience.json")
     .then(response => response.json())
     .then(addExperience);
 
+// ----------------------------------------------------------------------------------------------------
+// Contact
+// ----------------------------------------------------------------------------------------------------
+// Add Contact Content.
+function addContact(json) {
+    // Get Section by ID.
+    let tempSection = document.getElementById("contact");
+
+    // 2 subsections.
+    let tempElement, section1, section2;
+
+    // ----------------------------------------------------------------------------------------------------
+    // Section 1: Title.
+    section1 = document.createElement("div");
+    section1.className = "col-lg-9 col-md-11 col-sm-10 col-12 py-2 px-4";
+    
+    tempElement = document.createElement("h2");
+    tempElement.textContent = "Contact:";
+    section1.appendChild(tempElement);
+
+    // Add Section 1 to main section.
+    tempSection.appendChild(section1);
+
+    // ----------------------------------------------------------------------------------------------------
+    // Section 2: List of Contact.
+    section2 = document.createElement("div");
+    section2.className = "col-lg-9 col-md-11 col-sm-10 col-12 py-2 px-3 row justify-content-center text-center";
+    // Add Section 2 to main section.
+    tempSection.appendChild(section2);
+
+    // Extra Elements.
+    let tempCol;
+    
+    // Repeat Card Creation.
+    json.contact.forEach((item) => {
+        // Column.
+        tempCol = document.createElement("div");
+        tempCol.className = "col-sm-6 py-1";
+        section2.appendChild(tempCol);
+
+        // Icon.
+        tempElement = document.createElement("i");
+        tempElement.className = `${item.icon} me-2`;
+        tempCol.appendChild(tempElement);
+
+        // Detail with link.
+        tempElement = document.createElement("a");
+        tempElement.className = "text-decoration-none small";
+        tempElement.setAttribute("href", item.externalLink);
+        tempElement.setAttribute("target", "_blank");
+        tempElement.textContent = item.detail;
+        tempCol.appendChild(tempElement);
+    });
+    console.log(`Added Contact Content!`);
+    return;
+}
+
+// Fetch Contact Content.
+fetch("./js/info/contact.json")
+    .then(response => response.json())
+    .then(addContact);
+
 console.log(`Final Message: End of JS file!`);

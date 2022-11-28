@@ -375,4 +375,119 @@ fetch("./js/info/project.json")
     .then(response => response.json())
     .then(addProject);
 
+// ----------------------------------------------------------------------------------------------------
+// Work Experience
+// ----------------------------------------------------------------------------------------------------
+// Add Work Experience Content.
+function addExperience(json) {
+    // Get Section by ID.
+    let tempSection = document.getElementById("experience");
+
+    // 2 subsections.
+    let tempElement, section1, section2;
+
+    // ----------------------------------------------------------------------------------------------------
+    // Section 1: Title.
+    section1 = document.createElement("div");
+    section1.className = "col-lg-9 col-md-11 col-sm-10 col-12 py-2 px-4";
+    
+    tempElement = document.createElement("h2");
+    tempElement.textContent = "Work Experience:";
+    section1.appendChild(tempElement);
+
+    // Add Section 1 to main section.
+    tempSection.appendChild(section1);
+
+    // ----------------------------------------------------------------------------------------------------
+    // Section 2: List of Work Experience.
+    // Extra Elements.
+    let tempCard, tempBody, tempDiv;
+    // Repeat Card Creation.
+    json.experience.forEach((item, index) => {
+        section2 = document.createElement("div");
+        section2.className = "col-lg-9 col-md-11 col-sm-10 col-12 py-2 px-3";
+        // Add Section 2 to main section.
+        tempSection.appendChild(section2);
+        
+        tempCard = document.createElement("div");
+        tempCard.className = "card shadow-sm";
+        section2.appendChild(tempCard);
+
+        tempBody = document.createElement("div");
+        tempBody.className = "card-body";
+        tempCard.appendChild(tempBody);
+
+        // Div For Company and Working Date.
+        tempDiv = document.createElement("div");
+        tempDiv.className = "row p-0 m-0 d-flex justify-content-between";
+        // Add Div to Card Body.
+        tempBody.appendChild(tempDiv);
+
+        // Company.
+        tempElement = document.createElement("p");
+        tempElement.className = "h6 col-7 p-0 mb-2";
+        tempElement.textContent = item.company;
+        tempDiv.appendChild(tempElement);
+
+        // Working Date.
+        tempElement = document.createElement("p");
+        tempElement.className = "h6 col-5 p-0 mb-2 text-end";
+        tempElement.textContent = `${item.startDate} - ${item.endDate}`;
+        tempDiv.appendChild(tempElement);
+
+        // Div For Location and Job Type.
+        tempDiv = document.createElement("div");
+        tempDiv.className = "row p-0 m-0 d-flex justify-content-between";
+        // Add Div to Card Body.
+        tempBody.appendChild(tempDiv);
+
+        // Location.
+        tempElement = document.createElement("p");
+        tempElement.className = "small col-7 p-0 mb-2";
+        tempElement.textContent = item.location;
+        tempDiv.appendChild(tempElement);
+
+        // Job Type.
+        tempElement = document.createElement("p");
+        tempElement.className = "h6 col-5 p-0 mb-2 text-end";
+        tempElement.textContent = item.type;
+        tempDiv.appendChild(tempElement);
+
+        // Job Title.
+        tempElement = document.createElement("p");
+        tempElement.className = "h5";
+        tempElement.textContent = item.title;
+        tempBody.appendChild(tempElement);
+
+        // Button to Collapse Description.
+        tempElement = document.createElement("button");
+        tempElement.className = "btn btn-primary";
+        tempElement.setAttribute("type", "button");
+        tempElement.setAttribute("data-bs-toggle", "collapse");
+        tempElement.setAttribute("data-bs-target", `#experienceDesc${index}`);
+        tempElement.innerHTML = `View Description <i class="fa-sharp fa-solid fa-caret-down"></i>`;
+        tempBody.appendChild(tempElement);
+
+        // Collapsible Div for Description.
+        tempDiv = document.createElement("div");
+        tempDiv.className = "collapse mt-2";
+        tempDiv.id = `experienceDesc${index}`;
+        // Add Div to Card Body.
+        tempBody.appendChild(tempDiv);
+
+        // Multiline Description.
+        tempElement = document.createElement("p");
+        tempElement.className = "p-1 m-0 multiline";
+        tempElement.textContent = item.description;
+        tempDiv.appendChild(tempElement);
+    });
+    console.log(`Added Working Experience Content!`);
+    return;
+}
+
+// Fetch Work Experience Content.
+fetch("./js/info/experience.json")
+    .then(response => response.json())
+    .then(addExperience);
+
 console.log(`Final Message: End of JS file!`);

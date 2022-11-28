@@ -1,0 +1,40 @@
+{
+    "experience": [
+        {
+            "company": "Creative In Action International Sdn Bhd",
+            "startDate": "Aug 2022",
+            "endDate": "Sep 2022",
+            "type": "Part-time",
+            "location": "Kuching, Sarawak, Malaysia",
+            "title": "Energizer Roadshow Promoter",
+            "description": "- Drive sales of hard-to-sell products\n- Advise on a wide range of product selections based on feedback\n- Prepare daily sales reports which include environmental surveys"
+        },
+        {
+            "company": "Goodies Selection Shop",
+            "startDate": "Dec 2019",
+            "endDate": "Jan 2020",
+            "type": "Part-time",
+            "location": "Kuching, Sarawak, Malaysia",
+            "title": "Chinese New Year Hamper Shop Worker",
+            "description": "- Uninterrupted workload to meet demands for handcrafted hampers\n- Set up branches and build customer base ahead of competitors\n- Provide delivery services to customers in remote areas"
+        },
+        {
+            "company": "Ee Wan Trading Company",
+            "startDate": "Jan 2018",
+            "endDate": "Feb 2018",
+            "type": "Part-time",
+            "location": "Kuching, Sarawak, Malaysia",
+            "title": "Chinese New Year Festival Booth Worker",
+            "description": "- Decorate booth and promote a variety of festive goodies\n- Part-time cashier recording transactions in point-of-sale system\n- Attract local customers and tourists to purchase more"
+        },
+        {
+            "company": "Red Velvet Event Management",
+            "startDate": "Dec 2017",
+            "endDate": "Jan 2018",
+            "type": "Part-time",
+            "location": "Kuching, Sarawak, Malaysia",
+            "title": "Hotlink Postpaid Plan Promoter",
+            "description": "- Learn about new products and plan promotion\n- Participate directly in customer discovery\n- Deal with clients from different backgrounds"
+        }
+    ]
+}

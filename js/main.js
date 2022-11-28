@@ -308,12 +308,12 @@ function addProject(json) {
 
         // Card.
         nest2 = document.createElement("div");
-        nest2.className = "card shadow-sm text-center";
+        nest2.className = "card shadow-sm text-center w-100";
         nest1.appendChild(nest2);
 
         // Outer Image Container.
         nest3 = document.createElement("div");
-        nest3.className = "card-img-top text-start container-fluid w-50 p-1 mt-3 shadow rounded";
+        nest3.className = "card-img-top text-start d-block mx-auto w-50 p-1 mt-3 shadow rounded";
         nest2.appendChild(nest3);
 
         // Image Container.
@@ -323,7 +323,6 @@ function addProject(json) {
 
         // Card Image.
         tempElement = document.createElement("img");
-        tempElement.className = "";
         tempElement.setAttribute("src", item.image);
         tempElement.setAttribute("alt", item.title);
         nest4.appendChild(tempElement);

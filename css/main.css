@@ -37,3 +37,10 @@ footer {
     height: 100%;
     object-fit: cover;
 }
+
+/* Set container-fluid Maximum Width */
+@media (min-width: 1920px) {
+    .container-fluid {
+        max-width: 1920px !important;
+    }
+}

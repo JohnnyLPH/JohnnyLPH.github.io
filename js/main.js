@@ -262,4 +262,108 @@ fetch("./js/info/skill.json")
     .then(response => response.json())
     .then(addSkill);
 
-console.log(`Final Message: If there is no error, then everything runs fine!`);
+// ----------------------------------------------------------------------------------------------------
+// Projects
+// ----------------------------------------------------------------------------------------------------
+// Add Projects Content.
+function addProject(json) {
+    // Get Section by ID.
+    let tempSection = document.getElementById("project");
+
+    // 2 subsections.
+    let tempElement, section1, section2;
+
+    // ----------------------------------------------------------------------------------------------------
+    // Section 1: Title.
+    section1 = document.createElement("div");
+    section1.className = "col-lg-9 col-md-11 col-sm-10 col-12 py-2 px-4";
+    
+    tempElement = document.createElement("h2");
+    tempElement.textContent = "Featured Projects:";
+    section1.appendChild(tempElement);
+
+    // Add Section 1 to main section.
+    tempSection.appendChild(section1);
+
+    // ----------------------------------------------------------------------------------------------------
+    // Section 2: List of Projects.
+    section2 = document.createElement("div");
+    section2.className = "col-lg-9 col-md-11 col-sm-10 col-12 py-2 px-2";
+    tempSection.appendChild(section2);
+    
+    // Extra Elements.
+    let tempDiv1, nest1, nest2, nest3, nest4;
+
+    // Row.
+    tempDiv1 = document.createElement("div");
+    tempDiv1.className = "row p-0 m-0 d-flex justify-content-center px-1";
+    section2.appendChild(tempDiv1);
+
+    // Repeat Card Creation.
+    json.project.forEach((item) => {
+        // Col.
+        nest1 = document.createElement("div");
+        nest1.className = "col-md-4 col-sm-6 p-1 d-flex align-items-stretch";
+        tempDiv1.appendChild(nest1);
+
+        // Card.
+        nest2 = document.createElement("div");
+        nest2.className = "card shadow-sm text-center";
+        nest1.appendChild(nest2);
+
+        // Card Image.
+        tempElement = document.createElement("img");
+        tempElement.className = "card-img-top w-50 mx-auto my-2";
+        tempElement.setAttribute("src", item.image);
+        tempElement.setAttribute("alt", item.title);
+        nest2.appendChild(tempElement);
+
+        // Card Body.
+        nest3 = document.createElement("div");
+        nest3.className = "card-body d-flex flex-column justify-content-center";
+        nest2.appendChild(nest3);
+
+        // Badge div.
+        nest4 = document.createElement("div");
+        nest4.className = "mb-1";
+        nest3.appendChild(nest4);
+
+        // Badge.
+        item.badge.forEach((badge) => {
+            tempElement = document.createElement("span");
+            tempElement.className = `${badge.bsClass} me-1`;
+            tempElement.textContent = badge.title;
+            nest4.appendChild(tempElement);
+        });
+
+        // Project Title.
+        tempElement = document.createElement("p");
+        tempElement.className = "h6";
+        tempElement.textContent = item.title;
+        nest3.appendChild(tempElement);
+
+        // Project Description.
+        tempElement = document.createElement("p");
+        tempElement.className = "small";
+        tempElement.textContent = item.description;
+        nest3.appendChild(tempElement);
+
+        // Button to external link.
+        tempElement = document.createElement("a");
+        tempElement.className = "btn btn-primary mt-auto mx-auto align-self-start";
+        tempElement.setAttribute("href", item.externalLink);
+        tempElement.setAttribute("target", "_blank");
+        tempElement.innerHTML = `View on GitHub <i class="fa-brands fa-github"></i>`;
+        nest3.appendChild(tempElement);
+    });
+
+    console.log(`Added Projects Content!`);
+    return;
+}
+
+// Fetch Projects Content.
+fetch("./js/info/project.json")
+    .then(response => response.json())
+    .then(addProject);
+
+console.log(`Final Message: End of JS file!`);

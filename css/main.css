@@ -17,7 +17,7 @@ footer {
     color: var(--theme-color);
 }
 
-#skill .card:hover, #project .card:hover {
+#skill .card:hover {
     opacity: 0.85;
 }
 

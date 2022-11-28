@@ -1,0 +1,88 @@
+{
+    "project": [
+        {
+            "title": "Tree Profiling Management System",
+            "externalLink": "https://github.com/JohnnyLPH/UNI_CSSE_Year2_Sem2_DatabaseConceptAndDesign_Project_1",
+            "image": "./img/Projects/TreeProfilingManagementSystem_Icon.png",
+            "description": "This is a project to demonstrate my understanding of database design and concepts, and my task is to create a management system to manage trees, blocks, orchards, users, etc. based on a given case study.",
+            "badge": [
+                {
+                    "title": "2022",
+                    "bsClass": "badge rounded-pill bg-info"
+                }
+            ]
+        },
+        {
+            "title": "Health Diary Application",
+            "externalLink": "https://github.com/JohnnyLPH/UNI_CSSE_Year2_Sem2_JavaProgramming_Project_1",
+            "image": "./img/Projects/HealthDiary_Icon.png",
+            "description": "This is a project to demonstrate my understanding of database design and concepts, and my task is to create a management system to manage trees, blocks, orchards, users, etc. based on a given case study.",
+            "badge": [
+                {
+                    "title": "2022",
+                    "bsClass": "badge rounded-pill bg-info"
+                }
+            ]
+        },
+        {
+            "title": "Reworked LINGsCARS Website",
+            "externalLink": "https://github.com/JohnnyLPH/UNI_CSSE_Year2_Sem1_WebBasedSystemDevelopment_Project_1",
+            "image": "./img/Projects/LINGsCARS_Icon.png",
+            "description": "This is a project to demonstrate my understanding of database design and concepts, and my task is to create a management system to manage trees, blocks, orchards, users, etc. based on a given case study.",
+            "badge": [
+                {
+                    "title": "2021",
+                    "bsClass": "badge rounded-pill bg-info"
+                }
+            ]
+        },
+        {
+            "title": "Sudoku (with Solver)",
+            "externalLink": "https://github.com/JohnnyLPH/SimpleGUI_SUDOKU",
+            "image": "./img/Projects/Sudoku_Icon.png",
+            "description": "This is a project to demonstrate my understanding of database design and concepts, and my task is to create a management system to manage trees, blocks, orchards, users, etc. based on a given case study.",
+            "badge": [
+                {
+                    "title": "2020",
+                    "bsClass": "badge rounded-pill bg-info"
+                },
+                {
+                    "title": "Old",
+                    "bsClass": "badge rounded-pill bg-warning"
+                }
+            ]
+        },
+        {
+            "title": "Perplexed Maths Puzzle",
+            "externalLink": "https://github.com/JohnnyLPH/PerplexedMathsPuzzle",
+            "image": "./img/Projects/PerplexedMathsPuzzle_Icon.png",
+            "description": "This is a project to demonstrate my understanding of database design and concepts, and my task is to create a management system to manage trees, blocks, orchards, users, etc. based on a given case study.",
+            "badge": [
+                {
+                    "title": "2020",
+                    "bsClass": "badge rounded-pill bg-info"
+                },
+                {
+                    "title": "Old",
+                    "bsClass": "badge rounded-pill bg-warning"
+                }
+            ]
+        },
+        {
+            "title": "Connect 4 (Minimax AI)",
+            "externalLink": "https://github.com/JohnnyLPH/SimpleGUI_Connect4",
+            "image": "./img/Projects/Connect4_Icon.png",
+            "description": "This is a project to demonstrate my understanding of database design and concepts, and my task is to create a management system to manage trees, blocks, orchards, users, etc. based on a given case study.",
+            "badge": [
+                {
+                    "title": "2020",
+                    "bsClass": "badge rounded-pill bg-info"
+                },
+                {
+                    "title": "Old",
+                    "bsClass": "badge rounded-pill bg-warning"
+                }
+            ]
+        }
+    ]
+}

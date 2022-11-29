@@ -1,6 +1,6 @@
 // Remember to Run Server.
-console.log(`If you can see this message, JavaScript is working :)`);
-console.log(`Defer is working if '${document.body}' is not NULL!`);
+// console.log(`If you can see this message, JavaScript is working :)`);
+// console.log(`Defer is working if '${document.body}' is not NULL!`);
 
 // ----------------------------------------------------------------------------------------------------
 // About Me
@@ -55,7 +55,7 @@ function addAbout(json) {
 
     // Add Section 2 to main section.
     tempSection.appendChild(section2);
-    console.log(`Added About Me Content!`);
+    // console.log(`Added About Me Content!`);
     return;
 }
 
@@ -156,7 +156,7 @@ function addEducation(json) {
         section2.appendChild(tempCard);
         tempSection.appendChild(section2);
     });
-    console.log(`Added Education Content!`);
+    // console.log(`Added Education Content!`);
     return;
 }
 
@@ -251,9 +251,9 @@ function addSkill(json) {
         nest4.appendChild(tempElement);
     });
 
-    console.log("Popover List after Adding Skills Content:\n");
-    console.log(popoverList);
-    console.log(`Added Skills Content!`);
+    // console.log("Popover List after Adding Skills Content:\n");
+    // console.log(popoverList);
+    // console.log(`Added Skills Content!`);
     return;
 }
 
@@ -366,7 +366,7 @@ function addProject(json) {
         nest3.appendChild(tempElement);
     });
 
-    console.log(`Added Projects Content!`);
+    // console.log(`Added Projects Content!`);
     return;
 }
 
@@ -481,7 +481,7 @@ function addExperience(json) {
         tempElement.textContent = item.description;
         tempDiv.appendChild(tempElement);
     });
-    console.log(`Added Working Experience Content!`);
+    // console.log(`Added Working Experience Content!`);
     return;
 }
 
@@ -543,7 +543,7 @@ function addContact(json) {
         tempElement.textContent = item.detail;
         tempCol.appendChild(tempElement);
     });
-    console.log(`Added Contact Content!`);
+    // console.log(`Added Contact Content!`);
     return;
 }
 
@@ -552,4 +552,4 @@ fetch("./js/info/contact.json")
     .then(response => response.json())
     .then(addContact);
 
-console.log(`Final Message: End of JS file!`);
+// console.log(`Final Message: End of JS file!`);

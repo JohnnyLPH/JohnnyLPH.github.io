@@ -12,6 +12,10 @@ nav {
     background-color: var(--nav-color);
 }
 
+.navbar-img {
+    width: 40px;
+}
+
 footer {
     background-color: var(--footer-color);
     color: var(--theme-color);

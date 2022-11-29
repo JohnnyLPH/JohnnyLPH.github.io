@@ -233,7 +233,7 @@ function addSkill(json) {
 
         // Card.
         nest3 = document.createElement("div");
-        nest3.className = "card shadow-sm text-center";
+        nest3.className = "card shadow-sm text-center h-100";
         nest2.appendChild(nest3);
 
         // Card Body.
@@ -516,32 +516,32 @@ function addContact(json) {
     // ----------------------------------------------------------------------------------------------------
     // Section 2: List of Contact.
     section2 = document.createElement("div");
-    section2.className = "col-lg-9 col-md-11 col-sm-10 col-12 py-2 px-3 row justify-content-center text-center";
+    section2.className = "col-lg-9 col-md-11 col-sm-10 col-8 py-1 px-2 d-flex flex-wrap flex-sm-row flex-column justify-content-between";
     // Add Section 2 to main section.
     tempSection.appendChild(section2);
 
     // Extra Elements.
-    let tempCol;
+    let tempDiv;
     
     // Repeat Card Creation.
     json.contact.forEach((item) => {
-        // Column.
-        tempCol = document.createElement("div");
-        tempCol.className = "col-sm-6 py-1";
-        section2.appendChild(tempCol);
+        // Div for contact.
+        tempDiv = document.createElement("div");
+        tempDiv.className = "px-1 py-1 d-flex justify-content-sm-center align-items-center";
+        section2.appendChild(tempDiv);
 
         // Icon.
         tempElement = document.createElement("i");
-        tempElement.className = `${item.icon} me-2`;
-        tempCol.appendChild(tempElement);
+        tempElement.className = `${item.icon} p-2 bg-info rounded-circle mx-1`;
+        tempDiv.appendChild(tempElement);
 
         // Detail with link.
         tempElement = document.createElement("a");
-        tempElement.className = "text-decoration-none small";
+        tempElement.className = "text-decoration-none mx-1";
         tempElement.setAttribute("href", item.externalLink);
         tempElement.setAttribute("target", "_blank");
         tempElement.textContent = item.detail;
-        tempCol.appendChild(tempElement);
+        tempDiv.appendChild(tempElement);
     });
     // console.log(`Added Contact Content!`);
     return;

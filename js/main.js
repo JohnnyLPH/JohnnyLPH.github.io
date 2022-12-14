@@ -359,10 +359,18 @@ function addProject(json) {
 
         // Button to external link.
         tempElement = document.createElement("a");
-        tempElement.className = "btn btn-primary mt-auto mx-auto align-self-start";
-        tempElement.setAttribute("href", item.externalLink);
-        tempElement.setAttribute("target", "_blank");
-        tempElement.innerHTML = `View on GitHub <i class="fa-brands fa-github"></i>`;
+
+        // Check if the link is public.
+        if (item.isPublic) {
+            tempElement.className = "btn btn-primary mt-auto mx-auto align-self-start";
+            tempElement.setAttribute("href", item.externalLink);
+            tempElement.setAttribute("target", "_blank");
+            tempElement.innerHTML = `View on GitHub <i class="fa-brands fa-github"></i>`;
+        }
+        else {
+            tempElement.className = "btn btn-secondary mt-auto mx-auto align-self-start";
+            tempElement.innerHTML = `Private Project <i class="fa-brands fa-github"></i>`;
+        }
         nest3.appendChild(tempElement);
     });
 

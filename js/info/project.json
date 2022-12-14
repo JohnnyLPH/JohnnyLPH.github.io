@@ -1,6 +1,26 @@
 {
     "project": [
         {
+            "title": "Magic Roses Florist Web Application",
+            "externalLink": "https://github.com/JohnnyLPH/UNI_CSSE_Year3_Sem1_SoftwareEngineeringLab_Project_1",
+            "image": "./img/Projects/MagicRosesFloristWebApplication_Icon.png",
+            "description": "An e-commerce web application developed by our team, DwarfSpace, using Laravel 9, MySQL and Bootstrap 5. It is designed to reduce the problems faced by our client and help provide an easier way to do business with their patrons. Rapid Application Development (RAD) methodology is used for agile software development.",
+            "badge": [
+                {
+                    "title": "2022",
+                    "bsClass": "badge rounded-pill bg-info"
+                },
+                {
+                    "title": "Web",
+                    "bsClass": "badge rounded-pill bg-primary"
+                },
+                {
+                    "title": "Ongoing",
+                    "bsClass": "badge rounded-pill bg-success"
+                }
+            ]
+        },
+        {
             "title": "Tree Profiling Management System",
             "externalLink": "https://github.com/JohnnyLPH/UNI_CSSE_Year2_Sem2_DatabaseConceptAndDesign_Project_1",
             "image": "./img/Projects/TreeProfilingManagementSystem_Icon.png",

@@ -14,10 +14,6 @@
                 {
                     "title": "Web",
                     "bsClass": "badge rounded-pill bg-primary"
-                },
-                {
-                    "title": "Ongoing",
-                    "bsClass": "badge rounded-pill bg-success"
                 }
             ]
         },

@@ -1,6 +1,15 @@
 {
     "experience": [
         {
+            "company": "Sarawak Information Systems Sdn. Bhd. (SAINS)",
+            "startDate": "Feb 2023",
+            "endDate": "Aug 2023",
+            "type": "Internship",
+            "location": "Sarawak, Malaysia",
+            "title": "Industrial Trainee (Software & Digital Solutions Division - PHP Section)",
+            "description": "## Will be Updated Soon ##"
+        },
+        {
             "company": "Creative In Action International Sdn Bhd",
             "startDate": "Aug 2022",
             "endDate": "Sep 2022",

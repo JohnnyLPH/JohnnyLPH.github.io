@@ -1,88 +1,88 @@
 {
-    "skill": [
-        {
-            "shortTitle": "PHP",
-            "title": "PHP (Hypertext Preprocessor)",
-            "externalLink": "https://en.wikipedia.org/wiki/PHP",
-            "description": "I learned PHP at UNIMAS and taught myself Laravel framework for some of my web development projects.",
-            "icon": "fa-brands fa-php"
-        },
-        {
-            "shortTitle": "SQL",
-            "title": "SQL (Structured Query Language)",
-            "externalLink": "https://en.wikipedia.org/wiki/SQL",
-            "description": "Exposure to Database Design and Concept course at UNIMAS helped me gain a deeper understanding of SQL and Database.",
-            "icon": "fa-solid fa-database"
-        },
-        {
-            "shortTitle": "MySQL",
-            "title": "MySQL",
-            "externalLink": "https://en.wikipedia.org/wiki/MySQL",
-            "description": "MySQL is used as the primary database management system (DBMS) in most of my web development projects.",
-            "icon": "fa-solid fa-database"
-        },
-        {
-            "shortTitle": "JavaScript",
-            "title": "JavaScript",
-            "externalLink": "https://en.wikipedia.org/wiki/JavaScript",
-            "description": "JavaScript is primarily used for manipulating the Document Object Model (DOM) in web development.",
-            "icon": "fa-brands fa-square-js"
-        },
-        {
-            "shortTitle": "HTML5",
-            "title": "HTML5 (HyperText Markup Language)",
-            "externalLink": "https://en.wikipedia.org/wiki/HTML",
-            "description": "HTML is used to define the basic structure of web pages.",
-            "icon": "fa-brands fa-html5"
-        },
-        {
-            "shortTitle": "CSS",
-            "title": "CSS (Cascading Style Sheets)",
-            "externalLink": "https://en.wikipedia.org/wiki/CSS",
-            "description": "CSS is used to style web pages. I often use the Bootstrap framework to create responsive websites such as my personal portfolio.",
-            "icon": "fa-brands fa-css3-alt"
-        },
-        {
-            "shortTitle": "Python",
-            "title": "Python",
-            "externalLink": "https://en.wikipedia.org/wiki/Python_(programming_language)",
-            "description": "I have taught myself Python (Tkinter for simple GUI applications, brief experience with Flask for web development) before UNIMAS admission.",
-            "icon": "fa-brands fa-python"
-        },
-        {
-            "shortTitle": "Java",
-            "title": "Java",
-            "externalLink": "https://en.wikipedia.org/wiki/Java_(programming_language)",
-            "description": "Learned basic Java (for Android development) before going to UNIMAS. Java was also taught at UNIMAS, and I learned to create simple GUI desktop applications using the Swing library.",
-            "icon": "fa-brands fa-java"
-        },
-        {
-            "shortTitle": "C",
-            "title": "C Programming Language",
-            "externalLink": "https://en.wikipedia.org/wiki/C_(programming_language)",
-            "description": "C is an introductory Computer Science course taught at UNIMAS, primarily for developing command-line interface applications.",
-            "icon": "fa-solid fa-laptop-code"
-        },
-        {
-            "shortTitle": "C++",
-            "title": "C++ Programming Language",
-            "externalLink": "https://en.wikipedia.org/wiki/C%2B%2B",
-            "description": "UNIMAS introduces object-oriented software development using C++. Like C, C++ is used in various courses to build command-line interface applications.",
-            "icon": "fa-solid fa-laptop-code"
-        },
-        {
-            "shortTitle": "UX",
-            "title": "UX (User Experience)",
-            "externalLink": "https://en.wikipedia.org/wiki/User_experience",
-            "description": "The Human Computer Interaction course at UNIMAS taught me how to achieve great UX in software.",
-            "icon": "fa-solid fa-users"
-        },
-        {
-            "shortTitle": "Agile",
-            "title": "Agile Software Development",
-            "externalLink": "https://en.wikipedia.org/wiki/Agile_software_development",
-            "description": "Most, if not all, of my software development projects use agile practices to deliver a high standard application in a short period of time. Agile Software Development was introduced very early at UNIMAS, with Rapid Application Development (RAD) being the most used agile methodology across all semesters.",
-            "icon": "fa-solid fa-arrows-spin"
-        }
-    ]
+  "skill": [
+    {
+      "shortTitle": "PHP",
+      "title": "PHP (Hypertext Preprocessor)",
+      "externalLink": "https://en.wikipedia.org/wiki/PHP",
+      "description": "I learned PHP at UNIMAS and taught myself Laravel framework for some of my web development projects.",
+      "icon": "fa-brands fa-php"
+    },
+    {
+      "shortTitle": "SQL",
+      "title": "SQL (Structured Query Language)",
+      "externalLink": "https://en.wikipedia.org/wiki/SQL",
+      "description": "Exposure to Database Design and Concept course at UNIMAS helped me gain a deeper understanding of SQL and Database.",
+      "icon": "fa-solid fa-database"
+    },
+    {
+      "shortTitle": "MySQL",
+      "title": "MySQL",
+      "externalLink": "https://en.wikipedia.org/wiki/MySQL",
+      "description": "MySQL is used as the primary database management system (DBMS) in most of my web development projects.",
+      "icon": "fa-solid fa-database"
+    },
+    {
+      "shortTitle": "JavaScript",
+      "title": "JavaScript",
+      "externalLink": "https://en.wikipedia.org/wiki/JavaScript",
+      "description": "JavaScript is primarily used for manipulating the Document Object Model (DOM) in web development.",
+      "icon": "fa-brands fa-square-js"
+    },
+    {
+      "shortTitle": "HTML5",
+      "title": "HTML5 (HyperText Markup Language)",
+      "externalLink": "https://en.wikipedia.org/wiki/HTML",
+      "description": "HTML is used to define the basic structure of web pages.",
+      "icon": "fa-brands fa-html5"
+    },
+    {
+      "shortTitle": "CSS",
+      "title": "CSS (Cascading Style Sheets)",
+      "externalLink": "https://en.wikipedia.org/wiki/CSS",
+      "description": "CSS is used to style web pages. I often use the Bootstrap framework to create responsive websites such as my personal portfolio.",
+      "icon": "fa-brands fa-css3-alt"
+    },
+    {
+      "shortTitle": "Python",
+      "title": "Python",
+      "externalLink": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+      "description": "I have taught myself Python (Tkinter for simple GUI applications, brief experience with Flask for web development) before UNIMAS admission.",
+      "icon": "fa-brands fa-python"
+    },
+    {
+      "shortTitle": "Java",
+      "title": "Java",
+      "externalLink": "https://en.wikipedia.org/wiki/Java_(programming_language)",
+      "description": "Learned basic Java (for Android development) before going to UNIMAS. Java was also taught at UNIMAS, and I learned to create simple GUI desktop applications using the Swing library.",
+      "icon": "fa-brands fa-java"
+    },
+    {
+      "shortTitle": "C",
+      "title": "C Programming Language",
+      "externalLink": "https://en.wikipedia.org/wiki/C_(programming_language)",
+      "description": "C is an introductory Computer Science course taught at UNIMAS, primarily for developing command-line interface applications.",
+      "icon": "fa-solid fa-laptop-code"
+    },
+    {
+      "shortTitle": "C++",
+      "title": "C++ Programming Language",
+      "externalLink": "https://en.wikipedia.org/wiki/C%2B%2B",
+      "description": "UNIMAS introduces object-oriented software development using C++. Like C, C++ is used in various courses to build command-line interface applications.",
+      "icon": "fa-solid fa-laptop-code"
+    },
+    {
+      "shortTitle": "UX",
+      "title": "UX (User Experience)",
+      "externalLink": "https://en.wikipedia.org/wiki/User_experience",
+      "description": "The Human Computer Interaction course at UNIMAS taught me how to achieve great UX in software.",
+      "icon": "fa-solid fa-users"
+    },
+    {
+      "shortTitle": "Agile",
+      "title": "Agile Software Development",
+      "externalLink": "https://en.wikipedia.org/wiki/Agile_software_development",
+      "description": "Most, if not all, of my software development projects use agile practices to deliver a high standard application in a short period of time. Agile Software Development was introduced very early at UNIMAS, with Rapid Application Development (RAD) being the most used agile methodology across all semesters.",
+      "icon": "fa-solid fa-arrows-spin"
+    }
+  ]
 }

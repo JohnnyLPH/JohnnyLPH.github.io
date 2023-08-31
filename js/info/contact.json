@@ -1,24 +1,24 @@
 {
-    "contact": [
-        {
-            "icon": "fa-solid fa-envelope",
-            "externalLink": "mailto:PikkHeangLau@outlook.com",
-            "detail": "PikkHeangLau@outlook.com"
-        },
-        {
-            "icon": "fa-solid fa-phone",
-            "externalLink": "https://api.whatsapp.com/send?phone=60168966984",
-            "detail": "+60 168966984"
-        },
-        {
-            "icon": "fa-brands fa-github",
-            "externalLink": "https://github.com/JohnnyLPH",
-            "detail": "JohnnyLPH (GitHub)"
-        },
-        {
-            "icon": "fa-brands fa-linkedin",
-            "externalLink": "https://www.linkedin.com/in/Pikk-Heang-Lau",
-            "detail": "Pikk Heang Lau (LinkedIn)"
-        }
-    ]
+  "contact": [
+    {
+      "icon": "fa-solid fa-envelope",
+      "externalLink": "mailto:PikkHeangLau@outlook.com",
+      "detail": "PikkHeangLau@outlook.com"
+    },
+    {
+      "icon": "fa-solid fa-phone",
+      "externalLink": "https://api.whatsapp.com/send?phone=60168966984",
+      "detail": "+60 168966984"
+    },
+    {
+      "icon": "fa-brands fa-github",
+      "externalLink": "https://github.com/JohnnyLPH",
+      "detail": "JohnnyLPH (GitHub)"
+    },
+    {
+      "icon": "fa-brands fa-linkedin",
+      "externalLink": "https://www.linkedin.com/in/Pikk-Heang-Lau",
+      "detail": "Pikk Heang Lau (LinkedIn)"
+    }
+  ]
 }

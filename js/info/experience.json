@@ -1,49 +1,49 @@
 {
-    "experience": [
-        {
-            "company": "Sarawak Information Systems Sdn. Bhd. (SAINS)",
-            "startDate": "Feb 2023",
-            "endDate": "Aug 2023",
-            "type": "Internship",
-            "location": "Sarawak, Malaysia",
-            "title": "Industrial Trainee (Software & Digital Solutions Division - PHP Section)",
-            "description": "## Will be Updated Soon ##"
-        },
-        {
-            "company": "Creative In Action International Sdn Bhd",
-            "startDate": "Aug 2022",
-            "endDate": "Sep 2022",
-            "type": "Part-time",
-            "location": "Kuching, Sarawak, Malaysia",
-            "title": "Energizer Roadshow Promoter",
-            "description": "- Drive sales of hard-to-sell products\n- Advise on a wide range of product selections based on feedback\n- Prepare daily sales reports which include environmental surveys"
-        },
-        {
-            "company": "Goodies Selection Shop",
-            "startDate": "Dec 2019",
-            "endDate": "Jan 2020",
-            "type": "Part-time",
-            "location": "Kuching, Sarawak, Malaysia",
-            "title": "Chinese New Year Hamper Shop Worker",
-            "description": "- Uninterrupted workload to meet demands for handcrafted hampers\n- Set up branches and build customer base ahead of competitors\n- Provide delivery services to customers in remote areas"
-        },
-        {
-            "company": "Ee Wan Trading Company",
-            "startDate": "Jan 2018",
-            "endDate": "Feb 2018",
-            "type": "Part-time",
-            "location": "Kuching, Sarawak, Malaysia",
-            "title": "Chinese New Year Festival Booth Worker",
-            "description": "- Decorate booth and promote a variety of festive goodies\n- Part-time cashier recording transactions in point-of-sale system\n- Attract local customers and tourists to purchase more"
-        },
-        {
-            "company": "Red Velvet Event Management",
-            "startDate": "Dec 2017",
-            "endDate": "Jan 2018",
-            "type": "Part-time",
-            "location": "Kuching, Sarawak, Malaysia",
-            "title": "Hotlink Postpaid Plan Promoter",
-            "description": "- Learn about new products and plan promotion\n- Participate directly in customer discovery\n- Deal with clients from different backgrounds"
-        }
-    ]
+  "experience": [
+    {
+      "company": "Sarawak Information Systems Sdn. Bhd. (SAINS)",
+      "startDate": "Feb 2023",
+      "endDate": "Aug 2023",
+      "type": "Internship",
+      "location": "Sarawak, Malaysia",
+      "title": "Industrial Trainee (Software & Digital Solutions Division - PHP Section)",
+      "description": "- Engaged actively in the e-Kehakiman Sabah and Sarawak (eKSS) project, a groundbreaking initiative aimed at augmenting the efficiency and functionality of the judiciary system across Sabah and Sarawak.\n- Applied diverse technical competencies including the utilization of the internal PHP development framework, Taurus Beam, alongside JavaScript, Bootstrap, and other contemporary technologies.\n- Thrived in a dynamic and fast-paced environment, consistently displaying meticulous attention to detail and exemplary time management skills.\n- My involvement in the project encompassed a range of responsibilities, including but not limited to:\n\t• Convert and refactor numerous a multitude of cron job files from the legacy system.\n\t• Assist in the translation of language files from English to Malay.\n\t• Develop the “Change Firm” feature to enhance system usability.\n\t• Implement the “Import and Export Menu Records” features to facilitate data management.\n\t• Distinctively chosen as the sole intern to participate in an urgent meeting addressing critical system improvements.\n\t• Granted full access to the system development server since then.\n\t• Implement various other features and address diverse system issues."
+    },
+    {
+      "company": "Creative In Action International Sdn Bhd",
+      "startDate": "Aug 2022",
+      "endDate": "Sep 2022",
+      "type": "Part-time",
+      "location": "Kuching, Sarawak, Malaysia",
+      "title": "Energizer Roadshow Promoter",
+      "description": "- Drive sales of hard-to-sell products\n- Advise on a wide range of product selections based on feedback\n- Prepare daily sales reports which include environmental surveys"
+    },
+    {
+      "company": "Goodies Selection Shop",
+      "startDate": "Dec 2019",
+      "endDate": "Jan 2020",
+      "type": "Part-time",
+      "location": "Kuching, Sarawak, Malaysia",
+      "title": "Chinese New Year Hamper Shop Worker",
+      "description": "- Uninterrupted workload to meet demands for handcrafted hampers\n- Set up branches and build customer base ahead of competitors\n- Provide delivery services to customers in remote areas"
+    },
+    {
+      "company": "Ee Wan Trading Company",
+      "startDate": "Jan 2018",
+      "endDate": "Feb 2018",
+      "type": "Part-time",
+      "location": "Kuching, Sarawak, Malaysia",
+      "title": "Chinese New Year Festival Booth Worker",
+      "description": "- Decorate booth and promote a variety of festive goodies\n- Part-time cashier recording transactions in point-of-sale system\n- Attract local customers and tourists to purchase more"
+    },
+    {
+      "company": "Red Velvet Event Management",
+      "startDate": "Dec 2017",
+      "endDate": "Jan 2018",
+      "type": "Part-time",
+      "location": "Kuching, Sarawak, Malaysia",
+      "title": "Hotlink Postpaid Plan Promoter",
+      "description": "- Learn about new products and plan promotion\n- Participate directly in customer discovery\n- Deal with clients from different backgrounds"
+    }
+  ]
 }
